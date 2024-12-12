@@ -23,4 +23,9 @@ public class Dollar {
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(amount);
+    }
+
 }
