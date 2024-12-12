@@ -1,7 +1,8 @@
 package com.example.tddexample;
 
 public class Dollar {
-    int amount;
+    private final int amount;
+
     public Dollar(int amount){
         this.amount = amount;
     }
@@ -9,4 +10,9 @@ public class Dollar {
     public Dollar times(int multiplier){
         return new Dollar(amount * multiplier);
     }
+
+    public int getAmount() {
+        return amount;
+    }
+
 }
