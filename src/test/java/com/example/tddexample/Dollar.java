@@ -15,4 +15,12 @@ public class Dollar {
         return amount;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Dollar other) {
+            return this.amount == other.amount;
+        }
+        return false;
+    }
+
 }
